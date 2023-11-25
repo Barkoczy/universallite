@@ -1,0 +1,29 @@
+# Language: ISO 639-1 >> https://www.loc.gov/standards/iso639-2/php/code_list.php
+# Country: ISO 3166-1 >> https://en.wikipedia.org/wiki/ISO_3166-1
+
+- iso: sk-SK
+  translate:
+    - iso: sk-SK
+      name: Slovenčina
+    - iso: en-US
+      name: Slovak
+    - iso: en-GB
+      name: Slovak
+
+- iso: en-US
+  translate:
+    - iso: sk-SK
+      name: Angličtina
+    - iso: en-US
+      name: English
+    - iso: en-GB
+      name: English
+
+- iso: en-GB
+  translate:
+    - iso: sk-SK
+      name: Angličtina
+    - iso: en-US
+      name: English
+    - iso: en-GB
+      name: English

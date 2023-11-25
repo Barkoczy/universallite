@@ -1,0 +1,65 @@
+{
+  "name": "barkoczy/universallite",
+  "description": "Universal.lite is a PHP kit that helps you quickly write simple yet powerful web applications and API.",
+  "keywords": ["universal", "universallite", "universal-lite"],
+  "homepage": "https://www.universallite.com",
+  "support": {
+    "issues": "https://github.com/Barkoczy/universallite/issues",
+    "source": "https://github.com/Barkoczy/universallite"
+  },
+  "authors": [
+    {
+      "name": "Henrich Barkoczy",
+      "email": "me@barkoczy.social"
+    }
+  ],
+  "type": "library",
+  "license": "AGPLv3",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "App\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "dev": "php -S localhost:8000 -t web web/index.php",
+    "create-env-config-file": [
+      "@php -r \"file_exists('.env') || copy('.env.sample', '.env');\""
+    ]
+  },
+  "require": {
+    "php": "^8.1",
+    "slim/slim": "4.*",
+    "slim/psr7": "^1.6",
+    "php-di/php-di": "^7.0",
+    "slim/twig-view": "^3.3",
+    "illuminate/database": "^10.13",
+    "illuminate/events": "^10.13",
+    "symfony/yaml": "^6.3",
+    "guzzlehttp/guzzle": "^7.7",
+    "nesbot/carbon": "^2.67",
+    "vlucas/phpdotenv": "^5.5",
+    "voku/html-compress-twig": "^4.0.2",
+    "phpmailer/phpmailer": "^6.8",
+    "mailgun/mailgun-php": "^3.5",
+    "sendgrid/sendgrid": "^8.0",
+    "dompdf/dompdf": "^2.0",
+    "symfony/translation": "^6.3",
+    "firebase/php-jwt": "^6.9",
+    "geoip2/geoip2": "~2.0"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}

@@ -1,0 +1,2 @@
+- url: /api/system/localization/{locality}/{iso}
+  controller: App\Kernel\Controllers\LocalizationController

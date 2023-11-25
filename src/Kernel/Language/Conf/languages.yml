@@ -1,0 +1,17 @@
+# Language: ISO 639-1 >> https://www.loc.gov/standards/iso639-2/php/code_list.php
+# Country: ISO 3166-1 >> https://en.wikipedia.org/wiki/ISO_3166-1
+
+- iso: sk-SK
+  country:
+    iso: SK
+    code: SVK
+
+- iso: en-US
+  country:
+    iso: US
+    code: USA
+
+- iso: en-GB
+  country:
+    iso: GB
+    code: GBR

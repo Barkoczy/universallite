@@ -1,0 +1,33 @@
+geolocate:
+  enabled: true
+  provider: maxmind
+
+mismatched:
+  url:
+    rule: redirect
+
+resources:
+  - iso: sk-SK
+    prefered:
+      browser:
+        acceptLanguage:
+          - sk-SK
+          - cz-CZ
+      geo:
+        country:
+          rule: only
+          iso:
+            - SK
+            - CZ
+
+  - iso: en-US
+    prefered:
+      browser:
+        acceptLanguage:
+          - en-US
+      geo:
+        country:
+          rule: everywhere-except
+          iso:
+            - SK
+            - CZ

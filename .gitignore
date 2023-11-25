@@ -1,0 +1,46 @@
+# App directories
+docs/
+logs/
+volumes/
+web/_tmp/
+web/drive/
+
+# Cache
+cache/
+
+# Dependency directories
+.idea/
+.trunk/
+.vscode/
+nbproject/
+vendor/
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Theme
+.theme/
+
+# dotenv environment variables file
+.env
+.env.test
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Lock files
+composer.lock
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+### VisualStudioCode ###
+.vscode/
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history

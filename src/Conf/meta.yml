@@ -1,0 +1,67 @@
+creator: Henrich Barkoczy
+publisher: Henrich Barkoczy
+generator: UNIVERSAL.lite
+applicationName: UNIVERSAL.lite
+robots: index, follow
+googlebot: all
+lang:
+  sk-SK:
+    title: UNIVERSAL.lite
+    keywords:
+    description:
+    schemaOrg:
+      name: UNIVERSAL.lite
+      title: UNIVERSAL.lite
+      keywords: php, kit, universallite, web, web applications, api, powerfull
+      description: Universal.lite je sada PHP, ktorá vám pomôže rýchlo napísať jednoduché, ale výkonné webové aplikácie a API.
+      image: /assets/img/universallite-metaimage.webp
+    openGraph:
+      locale: sk_SK
+      type: website
+      siteName: UNIVERSAL.lite
+      articlePublisher: https://www.facebook.com/profile.php?id=61553691192738
+      title: UNIVERSAL.lite
+      description: Universal.lite je sada PHP, ktorá vám pomôže rýchlo napísať jednoduché, ale výkonné webové aplikácie a API.
+      images:
+        -
+          url: /assets/img/universallite-metaimage.webp
+          width: 0
+          height: 0
+          alt: UNIVERSAL.lite
+    twitter:
+      card: summary_large_image
+      site: UNIVERSAL.lite
+      title: UNIVERSAL.lite
+      description: Universal.lite je sada PHP, ktorá vám pomôže rýchlo napísať jednoduché, ale výkonné webové aplikácie a API.
+      creator: Henrich Barkoczy
+      image: /assets/img/the-legits-blast-metaimage.webp
+  en-US:
+    title: UNIVERSAL.lite
+    keywords: php, kit, universallite, web, web applications, api, powerfull
+    description: Universal.lite is a PHP kit that helps you quickly write simple yet powerful web applications and API.
+    schemaOrg:
+      name: UNIVERSAL.lite
+      title: UNIVERSAL.lite
+      keywords: php, kit, universallite, web, web applications, api, powerfull
+      description: Universal.lite is a PHP kit that helps you quickly write simple yet powerful web applications and API.
+      image: /assets/img/enak_metaimage.jpg
+    openGraph:
+      locale: en_US
+      type: website
+      siteName: UNIVERSAL.lite
+      articlePublisher: https://www.facebook.com/thelegitsblast
+      title: UNIVERSAL.lite
+      description: Universal.lite is a PHP kit that helps you quickly write simple yet powerful web applications and API.
+      images:
+        -
+          url: /assets/img/universallite-metaimage.webp
+          width: 0
+          height: 0
+          alt: UNIVERSAL.lite
+    twitter:
+      card: summary_large_image
+      site: UNIVERSAL.lite
+      title: UNIVERSAL.lite
+      description: Universal.lite is a PHP kit that helps you quickly write simple yet powerful web applications and API.
+      creator: Henrich Barkoczy
+      image: /assets/img/universallite-metaimage.webp
