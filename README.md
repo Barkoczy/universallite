@@ -23,19 +23,19 @@ go to project folder and run command.
 Run like deamon (automatic run after start os) - parameter [ -d ]
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 Run in console
 
 ```bash
-docker-compose up
+docker compose up
 ```
 
 Install composer packages:
 
 ```shell
-docker-compose exec app composer install
+docker compose exec app composer install
 ```
 
 Then you should be able to access the application on:
