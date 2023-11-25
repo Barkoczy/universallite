@@ -16,6 +16,7 @@ abstract class Entity
   public $url;
   public $controller;
   public $template;
+  public $meta;
   public $data;
 
   /**
@@ -43,6 +44,7 @@ abstract class Entity
     $this->setURL($route);
     $this->setController($route);
     $this->setTemplate($route);
+    $this->setMeta($route);
     $this->setData($route);
   }
 
@@ -109,7 +111,16 @@ abstract class Entity
     if (!isset($route[RouteObject::template]))
       throw new MissingParameter('Missing parameter template in routes configuration file');
 
-    $this->template = '@console/'.$route[RouteObject::template];
+    $this->template = '@dashboard/'.$route[RouteObject::template];
+  }
+
+  /**
+   * @param array $route
+   * @return void
+   */
+  private function setMeta(array $route = []): void
+  {
+    $this->meta = $route[RouteObject::meta]??[];
   }
 
   /**
@@ -118,13 +129,6 @@ abstract class Entity
    */
   private function setData(array $route = []): void
   {
-    if(isset($route[RouteObject::data]) &&
-      is_array($route[RouteObject::data]) &&
-      0 < count($route[RouteObject::data])
-    ) {
-      $this->data = $route[RouteObject::data];
-    } else {
-      $this->data = [];
-    }
+    $this->data = $route[RouteObject::data]??[];
   }
 }

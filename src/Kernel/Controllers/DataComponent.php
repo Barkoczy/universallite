@@ -40,7 +40,7 @@ final class DataComponent
   public function __construct(string|array $schema = null, string|array $meta = null, string $url = '')
   {
     // @confFiles
-    $metaConf = Folder::getConfigPath().'/meta/base.yml';
+    $metaConf = Folder::getConfigPath().'/meta.yml';
     $templateConf = Folder::getConfigPath().'/template.yml';
 
     // @validate
@@ -101,12 +101,15 @@ final class DataComponent
     // @schema
     $schema = [];
 
-    // @cmd
-    if ($this->cmd->has($meta)) {
-      $res = $this->cmd->exec($meta);
+    if (is_array($meta)) {
+      $schema = $meta;
+    } else {
+      if ($this->cmd->has($meta)) {
+        $res = $this->cmd->exec($meta);
 
-      if (is_array($res)) {
-        $schema = $res;
+        if (is_array($res)) {
+          $schema = $res;
+        }
       }
     }
 

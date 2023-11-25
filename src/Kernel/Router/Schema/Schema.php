@@ -31,7 +31,7 @@ abstract class Schema
     $this->setMeta($route);
     $this->setData($route);
   }
-  
+
   /**
    * Http Request Method
    *
@@ -96,7 +96,7 @@ abstract class Schema
    */
   public function setAuth(array $route = []): void
   {
-    $this->auth = isset($route[RouteObject::auth]) 
+    $this->auth = isset($route[RouteObject::auth])
       ? (bool) $route[RouteObject::auth]
       : false;
   }
@@ -109,7 +109,7 @@ abstract class Schema
    */
   public function setMeta(array $route = []): void
   {
-    $this->meta = $route[RouteObject::meta];
+    $this->meta = $route[RouteObject::meta]??[];
   }
 
   /**
@@ -120,6 +120,6 @@ abstract class Schema
    */
   public function setData(array $route = []): void
   {
-    $this->data = $route[RouteObject::data];
+    $this->data = $route[RouteObject::data]??[];
   }
 }
